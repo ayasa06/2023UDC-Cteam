@@ -11,17 +11,17 @@ public class DBconnect
                 try
                 {
                     SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                    builder.DataSource = "<your_server>.database.windows.net";
-                    builder.UserID = "<your_username>";
-                    builder.Password = "<your_password>";
-                    builder.InitialCatalog = "<your_database>";
+                    builder.DataSource = "wiz-azure-dbserver-22310184.database.windows.net";
+                    builder.UserID = "zeal22310184";
+                    builder.Password = "Naruto3205";
+                    builder.InitialCatalog = "wiz-azure-db-22310184";
 
                     using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                     {
                         Console.WriteLine("\nQuery data example:");
                         Console.WriteLine("=========================================\n");
 
-                        String sql = "SELECT name, collation_name FROM sys.databases";
+                        String sql = "SELECT * FROM dbo.Stops";
 
                         using (SqlCommand command = new SqlCommand(sql, connection))
                         {
@@ -30,7 +30,7 @@ public class DBconnect
                             {
                                 while (reader.Read())
                                 {
-                                    Console.WriteLine("{0} {1}", reader.GetString(0), reader.GetString(1));
+                                    Console.WriteLine("{0} {1}", reader.GetInt32(0), reader.GetString(1));
                                 }
                             }
                         }
