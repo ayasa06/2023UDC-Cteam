@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ayasa\\Documents\\GitHub\\Cteam\\wwwroot\\img\\ロゴ.png",
+      "PackagePath": "staticwebassets\\img\\ロゴ.png"
+    },
+    {
       "Id": "C:\\Users\\ayasa\\Documents\\GitHub\\Cteam\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
